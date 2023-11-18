@@ -1,0 +1,42 @@
+git
+
+/**************************************LOCAL*****************************/
+
+*most of the version controling happens on local machine
+
+*git maintains 3 local storages on local machine(in other words git maintains our code in 3 different stages)
+	
+	** (1) Working Directory -where we modify our files- (Modified State)
+	** (2) Staging Directory -where we keep our files before committing- (Staged State)(Staging Area)
+	** (3) Local Repository  -where we keep the final committed version of the code- (Committed State) /git database is here/ all the branches and content tree are in this part
+
+
+
+
+> git init // Create an empty Git repository -git repository gets created-
+
+> git add .<file path> // moves files from "working directory" to "Staging Directory"
+
+> git commit //moves files from "Staging Directory" to "Local Repository"  
+
+
+/************************************REMOTE*****************************/
+
+> git push //moves files from "Local Repository" to a "Remote Repository like github ..."
+
+
+
+
+
+/**********************************BRANCHING***************************/
+
+
+*never work directly on master branch, if want to make changes, you'd better create a branch out of your master branch, work on it and test it, then merge it with master branch.
+
+ 
+> git branch <new branch's name>
+
+> git checkout <branch's name> 
+> git switch <branch's name>
+
+>git merge <branch's name> /*check out the branch you wish to merge into and then run the "git merge" command:*/
